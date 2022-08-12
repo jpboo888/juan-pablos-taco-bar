@@ -1,34 +1,15 @@
-const express = require('express') 
-const app = express();
-const PORT = 8080;
+let express = require('express');
+let mongoose = require('mongoose');
+let user =require('.routes/user');
+let app = express();
+let cors = require('cors');
+app.use(cors());
+app.use(express.json());
+let port = process.env.PORT || 3000;
 
-app.use(express.json())
+mongoose.connect('mongodb://localhost/user', {useNewUrlParser:true})
+        .then(() => console.log('connected to the database'))
+        .catch(err => console.log('somthing went wrong', err.message));
 
-app.listen(
-    PORT,
-    () => console.log(` its's alive on http://localhost:${PORT}`)
-)
-
-app.get('/tacocombo', (req, res) => {
-    res.status(200).send ({
-        taco: 'Taco Combo 1',
-        price: '10'
-        })
-});
-
-app.post('/tacocombo/:id', (req, res) => {
-
-    const { id } = req.params;
-    const {price} = req.body;
-
-    if (!price) {
-        res.status(418).send({ message: 'You need to order something to get points!'})
-    }
-
-    res.send({
-        tacocombo1:`${price} and ID of ${id}`,
-    });
-
-});
-
-
+app.use('/api/users', user);
+    app.listen(() => console.log(`port is working on ${port}`));
