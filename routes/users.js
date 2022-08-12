@@ -1,11 +1,11 @@
 let express = require('express');
 let router = express.Router();
 let Joi = require('@hapi/joi');
-let User = require('../model/users');
+let User = require('./../model/users.js');
 
 //new user registration
 
-router.post('/newuser',(req,res) => {
+router.post('/newuser',async (req,res) => {
     let {error} = ValidationError(req.body);
     if(error){return res.status(402).send(error.details[0].message)};
     let user = await user.findone({"UserLogin":{"email": req.body.UserLogin.email}})
@@ -21,7 +21,7 @@ router.post('/newuser',(req,res) => {
 
 //Joi validation
 
-function ValidationErro(message){
+function ValidationError(message){
     let Schema = Joi.object().keys({
         username:Joi.string().required().min(5).max(50),
         UserLogin:{
