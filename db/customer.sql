@@ -23,3 +23,10 @@ CREATE TABLE order_table (
   order VARCHAR(50) NOT NULL,
   pricing VARCHAR(30) NOT NULL,
 );
+
+CREATE TABLE login (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(30) NOT NULL,
+  email VARCHAR(30) NOT NULL,
+  userPassword VARCHAR(50) NOT NULL,
+);

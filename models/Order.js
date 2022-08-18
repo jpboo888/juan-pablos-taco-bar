@@ -2,35 +2,6 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-<<<<<<< HEAD
-class Order extends Model  {}
-
-Order.init ({
-    id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true
-      },
-      
-      price: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-      },
-    }
-    {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'user'
-    }
-    );
-
-    
-
-module.exports = Order;
-=======
 class Order extends Model{}
 Order.init(
     {
@@ -68,4 +39,3 @@ Order.init(
       
     //exports the module
     module.exports = Order;
->>>>>>> f24f977548828a14274e02e6d4ea7b968f772ca2
