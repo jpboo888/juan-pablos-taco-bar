@@ -27,17 +27,22 @@
 <div class="row">
 
     <div class="col l4 m4 s12">
-        <form id="user-input">
-            <div class="input-field" id="username">
-                    <input id="username" type="text">
-                    <label for="username">username</label>
-            </div>
-            <div class="input-field" id="password">
-                <input id="password" type="text">
-                <label for="password">password</label>
-        </div>
-                <button class="btn waves-effect waves-light black darken-3" type="submit" name="search-Btn" id="search-Btn">ENTER</button>
-         
+        
+
+         <form class="login-form">
+  <div>
+    <label for="email-login">email:</label>
+    <input type="text" id="email-login" />
+  </div>
+  <div>
+    <label for="password-login">password:</label>
+    <input type="password" id="password-login" />
+  </div>
+  <div>
+    <button type="submit" class="button is-primary">LOGIN</button>
+    <a href="/signup"><button type="button" class="button is-danger">SIGNUP</button></a>
+  </div>
+</form>
                 <h2 class="text1">
                     SIGN IN
                 </h2>
@@ -49,7 +54,6 @@
                  </h2>
          
             </form>
-         
 </div>
 
     <div class="col l4 m4 s12">
