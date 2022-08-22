@@ -1,9 +1,8 @@
 # Taco Boys Taco Bar 
 
-##about this project
-projects uses handlebars, node.js, js, mysql, sequalize, dotenv, bcrypt, express to create an app for ordering food
 
-##built with
+
+## Built with
 handlebars 
 node.js
 js
@@ -13,17 +12,40 @@ dotenv
 bcrypt
 express
 
-##usage
-this app was developed to serve for a restaraunt and allow people to order food and recieve it
+## Usage
+This app was developed to serve for a template for a MOCK restaraunt that showcases a POS or point rewards system being implemented.
 
-##road map
-homepage
-login
-
-##git hub url 
+## Screenshot & Link
+![screenshot](./public/images/taco%20boys%20screenshot.jpg)
 https://github.com/jpboo888/juan-pablos-taco-bar
 
-##built by
-jp maldonado
-daniel goldin
-hayden carr
+## Contributing
+
+Made with ❤️ by Juan Pablo Maldonado, Daniel Goldin, Hayden Carr
+
+## License
+
+Copyright (c) [2022] [Juan Pablo Maldonado]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Built by
+JP Maldonado
+Daniel Goldin
+Hayden Carr
