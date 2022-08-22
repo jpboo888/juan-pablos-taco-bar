@@ -1,6 +1,6 @@
 # Taco Boys Taco Bar 
 
-
+This application was made as a template for any restaurant or business looking to implement a new point of sale, or point rewwards system.
 
 ## Built with
 handlebars 
