@@ -17,7 +17,7 @@ This app was developed to serve for a template for a MOCK restaraunt that showca
 
 ## Screenshot & Link
 ![screenshot](./public/images/taco%20boys%20screenshot.jpg)
-https://github.com/jpboo888/juan-pablos-taco-bar
+https://jpboo888.github.io/juan-pablos-taco-bar/
 
 ## Contributing
 
